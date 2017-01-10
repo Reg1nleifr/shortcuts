@@ -1,0 +1,24 @@
+{
+    /* 
+     *   Author
+     *   Florian Reiter
+     *   Debugger for Chrome at Port 8081
+     */
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome Debugger",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8081/",
+            "runtimeArgs": [
+              "--disable-web-security",
+              "--user-data-dir",
+              "--remote-debugging-port=9222",
+              "--explicitly-allowed-ports=3000,8081"
+            ],
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}

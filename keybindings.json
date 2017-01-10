@@ -1,0 +1,114 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    // Plugins
+    {
+        "key": "cmd+alt+enter",
+        "command": "genGetSet.popup",
+        "when": "editorTextFocus && editorLangId == typescript"
+    },
+    {
+        "key": "cmd+alt+d",
+        "command": "docthis.documentThis"
+    },
+    {
+        "key": "cmd+alt+e",
+        "command": "docthis.documentEverything"
+    },
+    {
+        "key": "cmd+w",
+        "command": "extension.htmlTagWrap",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+,",
+        "command": "extension.trailing-semicolon",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    // Vanilla
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+/",
+        "command": "workbench.action.zoomOut"
+    },
+    {
+        "key": "shift+f8",
+        "command": "workbench.action.debug.stepBack",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+f7",
+        "command": "workbench.action.debug.stepOut",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f8",
+        "command": "workbench.action.debug.stepOver",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f7",
+        "command": "workbench.action.debug.stepInto",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f9",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+space",
+        "command": "cursorWordEndRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+7",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+s",
+        "command": "workbench.action.tasks.terminate",
+        "when": "editorTextFocus"
+    }
+]
